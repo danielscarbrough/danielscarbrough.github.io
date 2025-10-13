@@ -55,9 +55,10 @@ file system included, the code has no functionality. I have included it in order
   
 <p class="text">
 
-The second semester, I shifted my focus to developing computer vision systems for golf ball tracking. I used Ultralytics YOLO algorithm for recognition combined with a BOTSORT algorithm for tracking golf balls across
-multiple frames. I used the size of the bounding boxes to approximate the distance the golf ball was from the camera, and plotted the distance onto the system's touchscreen display.
-
+The second semester, I shifted my focus to developing computer vision systems for golf ball tracking. After capturing and filtering images using OpenCV, I utilized Ultralytics' YOLO algorithm for recognition combined 
+with a BOTSORT algorithm for tracking golf balls across multiple frames. I used the size of the bounding boxes to approximate the distance the golf ball was from the camera. The camera vision was tested at over 60 
+distances between 0 and 3 feet, resulting in an average 5" measurement error. The resting position of the golf ball was plotted onto the system's touchscreen display. Golf balls that pass the robot and go missing on
+the camera are marked by being grey in color. Additionally, the touchscreen allows for the user to pick the details of their putting session, and displays statistical data such as good, short, and long putts.  
 </p>
 
 <p style="text-align:center;">
