@@ -32,24 +32,39 @@ p.text {
   
 My senior year at university, I participated in the On-PAR senior design team with thirteen other members, including a faculty sponsor. Our team was tasked with creating a putting aid device that would track and collect
 both errant and accurate putts. We designed a robot that could recognize golf balls using computer vision, estimate their position based on the machine vision bounding box, and collect the golf ball using drive motors
-and flywheels.
+and flywheels. Below is the final SolidWorks rendering for the robot.
 
 </p>
 
+<p style="text-align:center;">
+  <img src="/projects/imgs/onpar_9.PNG" alt="SolidWorks rendering of the On-PAR project robot" style="width:500px;height:350px;">
+  <br>
+</p>  
+  
 <p class="text">
 
 As the most experienced programmer on the team, I became the team's lead software developer. I used a Raspberry Pi 5 running Ubuntu as the operating system of choice for the project, programming in Python. Early in
 the project's lifespan, I discovered the Robot Operating System (ROS 2), and taught myself the basics of ROS 2 to streamline the integration of motors and sensors. I spent the majority of the first semester coding
-the basic control system for the device.
+the basic control system for the device. There are seven primary ROS nodes that work in unison to control the system. I have linked the folder that includes all the source code for the project, though without the ROS 2 
+file system included, the code has no functionality. I have included it in order to convey the scale and quality of the code.
 
 </p>
 
+<a href="https://github.com/danielscarbrough/danielscarbrough.github.io/tree/main/projects/source_codes"><p class="link">Source Code</p></a>
+
+  
 <p class="text">
 
 The second semester, I shifted my focus to developing computer vision systems for golf ball tracking. I used Ultralytics YOLO algorithm for recognition combined with a BOTSORT algorithm for tracking golf balls across
 multiple frames. I used the size of the bounding boxes to approximate the distance the golf ball was from the camera, and plotted the distance onto the system's touchscreen display.
 
 </p>
+
+<p style="text-align:center;">
+  <img src="/projects/imgs/onpar_10.png" alt="Screenshot of the On-PAR menu screen" style="width:300px;height:166px;">
+  <img src="/projects/imgs/onpar_11.png" alt="Screenshot of the On-PAR menu screen" style="width:300px;height:166px;">
+  <br>
+</p>    
   
 <p class="text">
 
